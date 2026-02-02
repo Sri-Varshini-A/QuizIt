@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - QuizIt</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./auth.js"></script> <!-- Auth Check First -->
+</head>
+
+<body>
+    <script>const user = checkAuth();</script>
+
+    <nav>
+        <div class="logo">QuizIt</div>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./create.html">Create Quiz</a></li>
+            <li><button onclick="logout()">Logout</button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome, <span id="username-display">User</span>!</h1>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h2>Available Quizzes</h2>
+            <!-- <a href="./create.html"><button>+ Create New</button></a> -->
+        </div>
+
+        <div class="quiz-grid"></div>
+    </div>
+
+    <script src="./home.js"></script>
+</body>
+
+</html>

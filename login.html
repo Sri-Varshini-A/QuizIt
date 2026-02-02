@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - QuizIt</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="auth-container">
+        <form>
+            <h1>Login To QuizIt</h1>
+            <label>Email</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+            <label>Password</label>
+            <input type="password" id="password" required placeholder="Enter your password">
+            <div id="login-error" style="color: var(--danger); text-align: center; margin-bottom: 10px;"></div>
+            <button type="submit">Login</button>
+            <p class="auth-link">Create new account? <a href="./signup.html">Sign Up</a></p>
+        </form>
+    </div>
+    <script src="./login.js"></script>
+</body>
+
+</html>

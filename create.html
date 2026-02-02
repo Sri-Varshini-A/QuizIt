@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz - QuizIt</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./auth.js"></script>
+</head>
+
+<body>
+    <script>const user = checkAuth();</script>
+
+    <nav>
+        <div class="logo">QuizIt</div>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./create.html">Create Quiz</a></li>
+            <li><button onclick="logout()">Logout</button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Create your own quiz!!</h1>
+
+        <div class="creation-form">
+            <input id="title" type="text" placeholder="Enter Quiz Title">
+
+            <div id="quiz-container"></div>
+
+            <div style="text-align: center;">
+                <button class="btn" id="add-ques">Add Question</button>
+                <button class="btn" id="save-quiz" style="background: var(--success);">Save Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./create.js"></script>
+</body>
+
+</html>
