@@ -1,6 +1,7 @@
 # QuizIt 📝
 
 QuizIt is a simple, lightweight quiz application built with vanilla HTML, CSS, and JavaScript. It features user authentication, quiz creation, interactive taking mechanics, and a personalized dashboard.
+Click here: https://sri-varshini-a.github.io/QuizIt/
 
 ## ✨ Features
 
